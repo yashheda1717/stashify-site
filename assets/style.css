@@ -348,3 +348,9 @@ button,input{font:inherit;color:inherit}
 .emboss{width:112px;height:112px;border-radius:50%;display:grid;place-items:center;font-weight:800;font-size:3rem;color:#4a2a19;background:radial-gradient(circle at 40% 35%,#6d4029,#4a2a19 70%);box-shadow:inset 3px 3px 6px rgba(0,0,0,.45),inset -2px -2px 5px rgba(255,220,190,.18);text-shadow:1px 1px 0 rgba(255,220,190,.18),-1px -1px 1px rgba(0,0,0,.5)}
 .metal{padding:8px 16px;border-radius:8px;font-weight:800;letter-spacing:.18em;font-size:.8rem;color:#3b3f46;background:linear-gradient(180deg,#f4f5f7,#b9bec6 55%,#e6e8eb);box-shadow:0 2px 6px rgba(0,0,0,.45),inset 0 1px 0 #fff}
 @media (max-width:640px){.file .sheet{width:62%}.final .lip{height:80px}}
+
+/* App Store button + two QR codes (iOS 1.1) */
+.btn-ios{background:#0b0b0d;color:#fff;border:1px solid rgba(255,255,255,.18)}
+.btn-ios .t small{opacity:.8}
+html.apple .cta-row .btn-ios{order:-1}
+.qr2{gap:12px}.qr2 figure{margin:0;text-align:center}.qr2 figcaption{font-size:.72rem;font-weight:700;opacity:.8;margin-top:4px}

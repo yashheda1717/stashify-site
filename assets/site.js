@@ -18,6 +18,13 @@
     a.href = a.getAttribute("data-play") + "&referrer=" + enc(ref);
   });
 
+  /* ---- Apple devices: App Store first (APPLE_STORE) ---- */
+  var ua = navigator.userAgent || "", apple = /iPhone|iPad|iPod/.test(ua) || (/Macintosh/.test(ua));
+  if (apple) {
+    d.documentElement.classList.add("apple");
+    d.querySelectorAll("a[data-play][data-cta=header]").forEach(function (a) { a.removeAttribute("data-play"); a.href = "https://apps.apple.com/app/id6815763337"; });
+  }
+
   /* ---- Language choice (Stash-it!) ---- */
   d.querySelectorAll("[data-setlang]").forEach(function (a) {
     a.addEventListener("click", function (e) {
